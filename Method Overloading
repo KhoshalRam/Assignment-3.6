@@ -1,0 +1,24 @@
+Overloading methods with the same return type:
+     Yes, we can overload as many methods as we can, as long as the parameters are different. The concept can be explained with a simple example.
+
+Example:
+     
+import java.util.*;
+class Main{
+	public static void main(String args[]){
+		System.out.println(Add(10,20));
+		System.out.println(Add(21.234,12,255));
+		System.out.println(Add("Hi", " Khoshal"));
+	
+	}
+	public static int Add (int a, int b ){              //(int datatype, parameters will satisfy for two inputs of the same integer datatype//
+		return (a+b);
+	}
+	public static double Add (double a, double b){    //(double datatype, parameters will satisfy for two inputs of the same double datatype//
+		return (a+b);
+	}
+	public static String Add (String a, String b){    //(String operations with '+' modifier performs concatenate operation)//
+		return (a+b);
+	}
+}
+      
